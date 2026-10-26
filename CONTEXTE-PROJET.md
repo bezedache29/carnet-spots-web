@@ -31,7 +31,7 @@ Ce repo couvre la phase **préparation** (maison, ordinateur, wifi stable) : rec
 
 Ce repo ne possède pas de base de données propre — il consomme les ressources exposées par `carnet-spots-api` :
 
-- **`points`** : `id`, `owner_id`, `title`, `latitude`, `longitude`, `note`, `status` (`a_tester` / `valide` / `a_eviter` / `deja_dormi`), `visited_at`, `visibility` (`private` / `public`)
+- **`points`** : `id`, `owner_id`, `title`, `latitude`, `longitude`, `note`, `status` (`to_test` / `validated` / `to_avoid` / `already_slept`), `visited_at`, `visibility` (`private` / `public`)
 - **`tags`** : `id`, `owner_id`, `name` (unique par owner)
 - **`point_tag`** : relation many-to-many entre points et tags
 - **`photos`** (V2, hors scope V1) : relation à un point
